@@ -10,6 +10,9 @@ const THEMES = {
 };
 let particleH1 = 270, particleH2 = 190;
 
+// particles는 canvas 초기화 후 채워짐 — applyTheme보다 먼저 선언
+let particles;
+
 function applyTheme(name) {
   if (!THEMES[name]) return;
   document.getElementById('themeLink').href = `themes/theme-${name}.css`;
@@ -50,7 +53,7 @@ applyTheme(localStorage.getItem('resume-theme') || 'violet');
    ============================================= */
 const canvas = document.getElementById('heroCanvas');
 const ctx = canvas.getContext('2d');
-let W, H, particles, mouse = { x: -9999, y: -9999 };
+let W, H, mouse = { x: -9999, y: -9999 };
 
 function resizeCanvas() {
   const hero = document.getElementById('hero');
