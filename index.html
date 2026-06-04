@@ -29,19 +29,19 @@
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <div class="hero-particles" id="particles"></div>
+    <canvas id="heroCanvas"></canvas>
     <div class="hero-content">
-      <div class="hero-photo-wrap">
+      <div class="hero-photo-wrap" id="photoWrap">
         <img src="https://namong118.github.io/images/profile.png" alt="박남영 프로필 사진" class="hero-photo" onerror="this.src='https://github.com/namong118.png'" />
         <div class="hero-photo-ring"></div>
       </div>
       <div class="hero-text">
         <p class="hero-greeting">안녕하세요, 저는</p>
-        <h1 class="hero-name">박 남 영</h1>
+        <h1 class="hero-name" id="heroName">박 남 영</h1>
         <div class="hero-title-wrap">
-          <span class="hero-title-badge">Game Client Dev</span>
-          <span class="hero-arrow">→</span>
-          <span class="hero-title-badge accent">AI Developer</span>
+          <span class="hero-type-label">저는&nbsp;</span>
+          <span class="hero-typewriter" id="typewriter"></span>
+          <span class="hero-cursor" id="cursor">|</span>
         </div>
         <p class="hero-desc">
           디자인과를 졸업하고 게임 클라이언트 개발자로 커리어를 쌓은 후,<br/>
