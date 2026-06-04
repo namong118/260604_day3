@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>박남영 | AI Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">NAM<span>YOUNG</span></div>
+      <ul class="nav-links">
+        <li><a href="#hero">홈</a></li>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#skills">기술</a></li>
+        <li><a href="#experience">경력</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <img src="https://namong118.github.io/images/profile.png" alt="박남영 프로필 사진" class="hero-photo" onerror="this.src='https://github.com/namong118.png'" />
+        <div class="hero-photo-ring"></div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">안녕하세요, 저는</p>
+        <h1 class="hero-name">박 남 영</h1>
+        <div class="hero-title-wrap">
+          <span class="hero-title-badge">Game Client Dev</span>
+          <span class="hero-arrow">→</span>
+          <span class="hero-title-badge accent">AI Developer</span>
+        </div>
+        <p class="hero-desc">
+          디자인과를 졸업하고 게임 클라이언트 개발자로 커리어를 쌓은 후,<br/>
+          지금은 AI 개발자로의 전환을 향해 나아가고 있습니다.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> 연락하기</a>
+          <a href="#about" class="btn btn-outline"><i class="fas fa-user"></i> 더 알아보기</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/namong118" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://bsky.app/profile/bsky.app" target="_blank" class="social-link" title="Bluesky"><i class="fas fa-cloud"></i></a>
+          <a href="mailto:nmnmxe@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title fade-up">About Me</h2>
+      <div class="about-grid">
+        <div class="about-img-wrap fade-up">
+          <img src="https://namong118.github.io/images/profile.png" alt="박남영" class="about-img" onerror="this.src='https://github.com/namong118.png'" />
+          <div class="about-img-badge">
+            <i class="fas fa-map-marker-alt"></i> Seoul, Korea
+          </div>
+        </div>
+        <div class="about-info fade-up">
+          <h3>저를 소개합니다</h3>
+          <p class="about-text">
+            디자인과를 졸업 후 프로그래밍을 공부하여 게임 클라이언트 개발자로 근무한 경험을 바탕으로
+            <strong>AI 개발자</strong>가 되고자 공부하고 있습니다.
+          </p>
+          <p class="about-text">
+            새로운 기술 습득을 선호하며, 커뮤니케이션을 통해 문제해결할 때 보람을 느낍니다.
+            게임 개발에서 쌓은 <strong>C#, Unity, 3D 아트</strong> 역량을 AI 분야에 접목해
+            창의적인 개발자로 성장하고 있습니다.
+          </p>
+          <div class="about-tags">
+            <span class="tag">🎮 게임 개발 3년 4개월</span>
+            <span class="tag">🤖 AI 학습 중</span>
+            <span class="tag">🎨 디자인 전공</span>
+            <span class="tag">🌐 English OPIc AL</span>
+          </div>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-user"></i>
+              <span><strong>이름:</strong> 박남영</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span><strong>위치:</strong> Seoul, Korea</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-envelope"></i>
+              <span><strong>이메일:</strong> nmnmxe@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <i class="fab fa-github"></i>
+              <span><strong>GitHub:</strong> github.com/namong118</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-language"></i>
+              <span><strong>영어:</strong> OPIc AL / TOEIC 945</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-gray" id="skills">
+    <div class="container">
+      <h2 class="section-title fade-up">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category fade-up">
+          <h3><i class="fas fa-gamepad"></i> Game Development</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-label"><span>Unity</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>C#</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>UGUI / NGUI</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>UniRx</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>C++</span><span class="skill-pct">65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up">
+          <h3><i class="fas fa-cube"></i> 3D & Visual</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-label"><span>Unreal Engine 5</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>3ds Max</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>ZBrush</span><span class="skill-pct">65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Blender</span><span class="skill-pct">60%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>HLSL / Shader</span><span class="skill-pct">55%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up">
+          <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-label"><span>Git / GitHub</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Jenkins</span><span class="skill-pct">65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Photoshop</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>English (TOEIC 945)</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tech Badge Grid -->
+      <div class="tech-badges fade-up">
+        <span class="tech-badge">Unity</span>
+        <span class="tech-badge">C#</span>
+        <span class="tech-badge">C++</span>
+        <span class="tech-badge">Unreal Engine 5</span>
+        <span class="tech-badge">UGUI</span>
+        <span class="tech-badge">NGUI</span>
+        <span class="tech-badge">UniRx</span>
+        <span class="tech-badge">HLSL</span>
+        <span class="tech-badge">3ds Max</span>
+        <span class="tech-badge">ZBrush</span>
+        <span class="tech-badge">Blender</span>
+        <span class="tech-badge">Houdini</span>
+        <span class="tech-badge">Jenkins</span>
+        <span class="tech-badge">GitHub</span>
+        <span class="tech-badge">Photoshop</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title fade-up">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>게임 클라이언트 개발자</h3>
+              <span class="timeline-date">2021.04 – 2024.07</span>
+            </div>
+            <p class="timeline-company">
+              <i class="fas fa-building"></i> 넵튠 (Neptune)
+              <span class="timeline-duration">· 3년 4개월</span>
+            </p>
+            <ul class="timeline-desc">
+              <li>AF Project 초기 개발부터 알파 테스트까지 전 과정 참여</li>
+              <li>LinePuzzle TanTan 라이브 서비스 유지 및 신규 기능 개발</li>
+              <li>프렌즈 사천성, 탄탄 사천성 라이브 서비스 유지 및 기능 개발</li>
+              <li>Unity, C#, UGUI/NGUI, UniRx 기반 게임 클라이언트 개발</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Unity</span><span>C#</span><span>UGUI</span><span>UniRx</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot dot-learning"></div>
+          <div class="timeline-content timeline-current">
+            <div class="timeline-header">
+              <h3>AI 개발자 전환 학습</h3>
+              <span class="timeline-date timeline-date-now">2024.07 – 현재</span>
+            </div>
+            <p class="timeline-company">
+              <i class="fas fa-robot"></i> 자기계발 / 독학
+            </p>
+            <ul class="timeline-desc">
+              <li>게임 클라이언트 개발 경험을 바탕으로 AI 분야 전환 중</li>
+              <li>Python, 머신러닝, 딥러닝 학습</li>
+              <li>AI 프로젝트 포트폴리오 구축 중</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Python</span><span>AI/ML</span><span>Learning</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-gray" id="contact">
+    <div class="container">
+      <h2 class="section-title fade-up">Contact</h2>
+      <div class="contact-wrap">
+        <div class="contact-info fade-up">
+          <h3>함께 이야기해요</h3>
+          <p>새로운 기회와 협업 제안, 어떤 연락이든 환영합니다.</p>
+          <div class="contact-items">
+            <a href="mailto:nmnmxe@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <span>nmnmxe@gmail.com</span>
+            </a>
+            <a href="https://github.com/namong118" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <span>github.com/namong118</span>
+            </a>
+            <a href="https://bsky.app/profile/bsky.app" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-cloud"></i></div>
+              <span>Bluesky</span>
+            </a>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <span>Seoul, Korea</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form fade-up" id="contactForm">
+          <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" placeholder="홍길동" required />
+          </div>
+          <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" placeholder="hello@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">메시지</label>
+            <textarea id="message" rows="5" placeholder="안녕하세요! 협업 제안이나 궁금한 점을 남겨주세요." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">
+            <i class="fas fa-paper-plane"></i> 메시지 보내기
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">박남영</p>
+      <p class="footer-links">
+        <a href="https://github.com/namong118" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:nmnmxe@gmail.com"><i class="fas fa-envelope"></i></a>
+      </p>
+      <p>© 2024 박남영. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" title="맨 위로">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
