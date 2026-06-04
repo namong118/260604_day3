@@ -1,0 +1,32 @@
+/* ===================================
+   Palette 1: Violet Mist (보라 안개)
+   주컬러: 보라  보조: 시안  이벤트: 핑크
+   =================================== */
+:root {
+  /* 주컬러 (Primary) */
+  --primary:        #7c3aed;   /* violet-600  — 흰배경 대비 7.4:1 ✓ */
+  --primary-dark:   #5b21b6;   /* violet-800 */
+  --primary-light:  #c4b5fd;   /* violet-300 */
+  --primary-rgb:    124,58,237;
+
+  /* 보조컬러 (Accent) */
+  --accent:         #0891b2;   /* cyan-600    — 흰배경 대비 4.8:1 ✓ */
+  --accent-light:   #67e8f9;
+
+  /* 이벤트컬러 (Event) */
+  --accent2:        #db2777;   /* pink-600 */
+
+  /* 히어로 다크 배경 */
+  --dark:           #0d0a1e;
+  --dark-mid:       #1a0533;
+  --dark2:          #0f1020;
+
+  /* 파티클 색상 (hsl) */
+  --particle-h1:    270;        /* 보라 */
+  --particle-h2:    190;        /* 시안 */
+
+  /* 팔레트 스와치 (picker 표시용) */
+  --sw1: #e9d5ff;   /* 연보라 */
+  --sw2: #bfdbfe;   /* 연파랑 */
+  --sw3: #99f6e4;   /* 연민트 */
+}

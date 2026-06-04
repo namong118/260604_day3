@@ -1,0 +1,32 @@
+/* ===================================
+   Palette 3: Mint Garden (민트 정원)
+   주컬러: 에메랄드  보조: 바이올렛  이벤트: 앰버
+   =================================== */
+:root {
+  /* 주컬러 */
+  --primary:        #047857;   /* emerald-700 — 흰배경 대비 7.2:1 ✓ */
+  --primary-dark:   #065f46;   /* emerald-800 */
+  --primary-light:  #6ee7b7;   /* emerald-300 */
+  --primary-rgb:    4,120,87;
+
+  /* 보조컬러 */
+  --accent:         #7c3aed;   /* violet-600 */
+  --accent-light:   #c4b5fd;
+
+  /* 이벤트컬러 */
+  --accent2:        #b45309;   /* amber-700 */
+
+  /* 히어로 다크 배경 */
+  --dark:           #021a0e;
+  --dark-mid:       #052e16;
+  --dark2:          #0a0f1a;
+
+  /* 파티클 */
+  --particle-h1:    160;        /* 에메랄드 */
+  --particle-h2:    270;        /* 바이올렛 */
+
+  /* 스와치 */
+  --sw1: #a7f3d0;   /* 연민트 */
+  --sw2: #6ee7b7;   /* 민트 */
+  --sw3: #ddd6fe;   /* 연보라 */
+}

@@ -1,4 +1,51 @@
 /* =============================================
+   0. PALETTE THEME SWITCHER
+   ============================================= */
+const THEMES = {
+  violet: { h1: 270, h2: 190, name: 'Violet Mist' },
+  sky:    { h1: 204, h2: 172, name: 'Sky Ocean'   },
+  mint:   { h1: 160, h2: 270, name: 'Mint Garden' },
+  peach:  { h1:  25, h2: 335, name: 'Peach Sunset'},
+  rose:   { h1: 335, h2: 270, name: 'Rose Petal'  },
+};
+let particleH1 = 270, particleH2 = 190;
+
+function applyTheme(name) {
+  if (!THEMES[name]) return;
+  document.getElementById('themeLink').href = `themes/theme-${name}.css`;
+  particleH1 = THEMES[name].h1;
+  particleH2 = THEMES[name].h2;
+  // 기존 파티클 색상 업데이트
+  if (particles) particles.forEach(p => {
+    p.hue = Math.random() < 0.5 ? particleH1 : particleH2;
+  });
+  // 피커 active 상태
+  document.querySelectorAll('.palette-opt').forEach(el =>
+    el.classList.toggle('active', el.dataset.theme === name)
+  );
+  localStorage.setItem('resume-theme', name);
+}
+
+// 팔레트 패널 토글
+document.getElementById('paletteToggle').addEventListener('click', () => {
+  document.getElementById('palettePanel').classList.toggle('open');
+});
+document.addEventListener('click', (e) => {
+  if (!document.getElementById('palettePicker').contains(e.target)) {
+    document.getElementById('palettePanel').classList.remove('open');
+  }
+});
+document.querySelectorAll('.palette-opt').forEach(btn => {
+  btn.addEventListener('click', () => {
+    applyTheme(btn.dataset.theme);
+    document.getElementById('palettePanel').classList.remove('open');
+  });
+});
+
+// 저장된 테마 불러오기
+applyTheme(localStorage.getItem('resume-theme') || 'violet');
+
+/* =============================================
    1. CANVAS PARTICLE NETWORK
    ============================================= */
 const canvas = document.getElementById('heroCanvas');
@@ -18,7 +65,7 @@ function Particle() {
   this.vy = (Math.random() - 0.5) * 0.6;
   this.r = Math.random() * 2.5 + 1;
   this.base = { x: this.x, y: this.y };
-  this.hue = Math.random() < 0.5 ? 262 : 188; // purple or cyan
+  this.hue = Math.random() < 0.5 ? particleH1 : particleH2;
 }
 
 Particle.prototype.update = function () {
@@ -63,8 +110,8 @@ function connectParticles() {
         particles[i].x, particles[i].y,
         particles[j].x, particles[j].y
       );
-      grad.addColorStop(0, `hsla(262,80%,70%,${alpha})`);
-      grad.addColorStop(1, `hsla(188,80%,70%,${alpha})`);
+      grad.addColorStop(0, `hsla(${particleH1},80%,70%,${alpha})`);
+      grad.addColorStop(1, `hsla(${particleH2},80%,70%,${alpha})`);
       ctx.beginPath();
       ctx.moveTo(particles[i].x, particles[i].y);
       ctx.lineTo(particles[j].x, particles[j].y);
@@ -78,8 +125,9 @@ function connectParticles() {
 function drawMouseGlow() {
   if (mouse.x < 0 || mouse.x > W) return;
   const grd = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, 100);
-  grd.addColorStop(0, 'rgba(109,40,217,0.18)');
-  grd.addColorStop(1, 'rgba(109,40,217,0)');
+  const rgb = getComputedStyle(document.documentElement).getPropertyValue('--primary-rgb').trim() || '124,58,237';
+  grd.addColorStop(0, `rgba(${rgb},0.18)`);
+  grd.addColorStop(1, `rgba(${rgb},0)`);
   ctx.fillStyle = grd;
   ctx.fillRect(0, 0, W, H);
 }

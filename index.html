@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>박남영 | AI Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="themes/theme-violet.css" id="themeLink" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
@@ -336,6 +337,79 @@
   <button class="scroll-top" id="scrollTop" title="맨 위로">
     <i class="fas fa-arrow-up"></i>
   </button>
+
+  <!-- Palette Picker -->
+  <div class="palette-picker" id="palettePicker">
+    <div class="palette-panel" id="palettePanel">
+      <p class="palette-title">Color Palette</p>
+      <div class="palette-options">
+
+        <button class="palette-opt active" data-theme="violet">
+          <div class="pal-swatches">
+            <span class="pal-sw" style="background:#e9d5ff"></span>
+            <span class="pal-sw" style="background:#bfdbfe"></span>
+            <span class="pal-sw" style="background:#99f6e4"></span>
+          </div>
+          <div class="pal-info">
+            <span class="pal-name">Violet Mist</span>
+            <span class="pal-sub">보라 · 시안 · 핑크</span>
+          </div>
+        </button>
+
+        <button class="palette-opt" data-theme="sky">
+          <div class="pal-swatches">
+            <span class="pal-sw" style="background:#bae6fd"></span>
+            <span class="pal-sw" style="background:#99f6e4"></span>
+            <span class="pal-sw" style="background:#ddd6fe"></span>
+          </div>
+          <div class="pal-info">
+            <span class="pal-name">Sky Ocean</span>
+            <span class="pal-sub">하늘 · 틸 · 앰버</span>
+          </div>
+        </button>
+
+        <button class="palette-opt" data-theme="mint">
+          <div class="pal-swatches">
+            <span class="pal-sw" style="background:#a7f3d0"></span>
+            <span class="pal-sw" style="background:#6ee7b7"></span>
+            <span class="pal-sw" style="background:#ddd6fe"></span>
+          </div>
+          <div class="pal-info">
+            <span class="pal-name">Mint Garden</span>
+            <span class="pal-sub">민트 · 바이올렛 · 앰버</span>
+          </div>
+        </button>
+
+        <button class="palette-opt" data-theme="peach">
+          <div class="pal-swatches">
+            <span class="pal-sw" style="background:#fed7aa"></span>
+            <span class="pal-sw" style="background:#fecdd3"></span>
+            <span class="pal-sw" style="background:#fde68a"></span>
+          </div>
+          <div class="pal-info">
+            <span class="pal-name">Peach Sunset</span>
+            <span class="pal-sub">복숭아 · 핑크 · 인디고</span>
+          </div>
+        </button>
+
+        <button class="palette-opt" data-theme="rose">
+          <div class="pal-swatches">
+            <span class="pal-sw" style="background:#fbcfe8"></span>
+            <span class="pal-sw" style="background:#fecdd3"></span>
+            <span class="pal-sw" style="background:#e9d5ff"></span>
+          </div>
+          <div class="pal-info">
+            <span class="pal-name">Rose Petal</span>
+            <span class="pal-sub">장미 · 바이올렛 · 스카이</span>
+          </div>
+        </button>
+
+      </div>
+    </div>
+    <button class="palette-toggle" id="paletteToggle" title="테마 변경">
+      <i class="fas fa-palette"></i>
+    </button>
+  </div>
 
   <script src="script.js"></script>
 </body>
